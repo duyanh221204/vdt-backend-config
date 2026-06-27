@@ -29,7 +29,7 @@ backend:
   appName: vdt-backend
   image:
     repository: nguyenduyanh221204/vdt-backend
-    tag: v1.1.2
+    tag: v1.2.0
   replicas: 1
   port: 8000
   containerPort: 8000
