@@ -7,7 +7,8 @@ spec:
   selector:
     app: {{ .Values.backend.appName }}
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: {{ .Values.backend.service.port }}
       targetPort: {{ .Values.backend.service.targetPort }}
       {{- if eq .Values.backend.service.type "NodePort" }}

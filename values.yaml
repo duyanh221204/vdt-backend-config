@@ -27,6 +27,8 @@ database:
 
 backend:
   appName: vdt-backend
+  monitor:
+    name: vdt-backend-monitor
   image:
     repository: nguyenduyanh221204/vdt-backend
     tag: v1.0.0
