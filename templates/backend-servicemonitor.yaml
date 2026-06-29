@@ -2,7 +2,6 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: {{ .Values.backend.monitor.name }}
-  namespace: monitoring
   labels:
     app: {{ .Values.backend.appName }}
     release: {{ .Values.release.name }}
