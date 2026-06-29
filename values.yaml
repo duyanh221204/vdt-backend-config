@@ -49,3 +49,6 @@ backend:
     limits:
       memory: 256Mi
       cpu: 250m
+
+release:
+  name: prometheus-stack
