@@ -31,7 +31,7 @@ backend:
     name: vdt-backend-monitor
   image:
     repository: nguyenduyanh221204/vdt-backend
-    tag: v1.4.4
+    tag: v1.4.5
   replicas: 1
   port: 8000
   containerPort: 8000
