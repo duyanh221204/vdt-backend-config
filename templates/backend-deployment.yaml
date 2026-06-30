@@ -34,6 +34,8 @@ spec:
               value: {{ quote .Values.backend.auth.algorithm }}
             - name: ACCESS_TOKEN_EXPIRED_MINUTES
               value: {{ quote .Values.backend.auth.accessTokenExpiredMinutes }}
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: {{ quote .Values.backend.otel.otelExporterOtlpEndpoint }}
           resources:
             limits:
               memory: {{ .Values.backend.resources.limits.memory }}

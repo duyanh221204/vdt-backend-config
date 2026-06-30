@@ -39,6 +39,8 @@ backend:
     secretKey: fd6bf8bfbc5b1f608d1dc7c25e1f6b92ca2490844bd3da5622177024d5f2728e
     algorithm: HS256
     accessTokenExpiredMinutes: 10000
+  otel:
+    otelExporterOtlpEndpoint: http://tempo.observability.svc.cluster.local:4317
   service:
     name: vdt-backend-svc
     type: NodePort
